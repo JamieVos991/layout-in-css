@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="nl">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic Layout 5</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+      body {
+        display: flex;
+        align-items: end;
+        gap: 20px;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      header,
+      nav,
+      main,
+      footer {
+        width: 70%;
+        height: 25%;
+      }
+
+      header {
+      }
+
+      nav {
+        align-self: flex-start;
+      }
+
+      main {
+      }
+
+      footer {
+      }
     </style>
   </head>
   <body id="basic-layout-5">
