@@ -5,7 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic Layout 3</title>
     <link rel="stylesheet" href="../style.css" />
-    <style></style>
+    <style>
+      body {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "main main main main"
+          "main main main main"
+          "main main main main"
+          "footer footer footer footer"
+          "nav nav header header";
+      }
+
+      header {
+        grid-area: header;
+      }
+
+      nav {
+        grid-area: nav;
+      }
+
+      main {
+        grid-area: main;
+      }
+
+      footer {
+        grid-area: footer;
+      }
+    </style>
   </head>
   <body id="basic-layout-3">
     <header><h1>Basic Layout 3</h1></header>
